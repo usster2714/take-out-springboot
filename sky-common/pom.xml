@@ -50,7 +50,6 @@
             <artifactId>wechatpay-apache-httpclient</artifactId>
         </dependency>
     </dependencies>
-<<<<<<< HEAD
 
     <build>
         <plugins>
@@ -72,6 +71,4 @@
             </plugin>
         </plugins>
     </build>
-=======
->>>>>>> 93f49a209534d625b3f89bdb57c9914d79a2056e
 </project>
