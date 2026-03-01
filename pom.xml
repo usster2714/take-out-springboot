@@ -19,7 +19,11 @@
     </modules>
     <properties>
         <mybatis.spring>2.2.0</mybatis.spring>
+<<<<<<< HEAD
         <lombok>1.18.38</lombok>
+=======
+        <lombok>1.18.20</lombok>
+>>>>>>> 93f49a209534d625b3f89bdb57c9914d79a2056e
         <fastjson>1.2.76</fastjson>
         <commons.lang>2.6</commons.lang>
         <druid>1.2.1</druid>
