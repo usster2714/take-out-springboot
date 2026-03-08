@@ -47,10 +47,12 @@ public class JwtTokenAdminInterceptor implements HandlerInterceptor {
             Claims claims = JwtUtil.parseJWT(jwtProperties.getAdminSecretKey(), token);
             Long empId = Long.valueOf(claims.get(JwtClaimsConstant.EMP_ID).toString());
             log.info("当前员工id：", empId);
-            //3、通过，放行
+            //3、将员工ID存储到UserContext中
+            com.sky.context.UserContext.setCurrentId(empId);
+            //4、通过，放行
             return true;
         } catch (Exception ex) {
-            //4、不通过，响应401状态码
+            //5、不通过，响应401状态码
             response.setStatus(401);
             return false;
         }
